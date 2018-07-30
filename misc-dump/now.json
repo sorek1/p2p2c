@@ -1,0 +1,10 @@
+{
+  "type": "docker",
+  "env": {
+    "NATE": "is tall",
+    "NEWLINE": "this has\na newline"
+  },
+  "features": {
+    "cloud": "v2"
+  }
+}
