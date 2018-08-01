@@ -1,2 +1,2 @@
 FROM jtyr/asmttpd
-COPY . /data
+COPY index.html /data
