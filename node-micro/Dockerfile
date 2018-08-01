@@ -11,4 +11,4 @@ FROM mhart/alpine-node:base-10
 WORKDIR /usr/src
 ENV NODE_ENV="production"
 COPY --from=base /usr/src .
-CMD ["node", "src/main.js"]
+CMD ["node", "./node_modules/.bin/micro"]
