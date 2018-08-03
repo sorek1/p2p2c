@@ -2,7 +2,8 @@
   "type": "docker",
   "env": {
     "NATE": "is tall",
-    "NEWLINE": "this has\na newline"
+    "NEWLINE": "this has\na newline",
+    "NOW_DC": "2"
   },
   "features": {
     "cloud": "v2"
