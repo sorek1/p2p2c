@@ -1,14 +1,24 @@
-# Now Cloud v2 Demos
+# Now Examples
 
-This is a repository with examples of the new Now Cloud 2.0 infrastructure
-for *Serverless Docker Deployments*.
+## Static Websites
 
 These deployments:
+
+- Have a build phase and then are served fully statically
+- Get cached automatically by the Now CDN
+
+### Overview
+
+## Serverless Docker (V2)
+
+These deployments:
+
+- Respond with dynamic data by running code
 - Automatically scale to zero with no traffic
 - Boot from cold in under a second
 - Are built reproducibly from `Dockerfile`
 
-## Overview
+### Overview
 
 | Demo | Language | Description | Size |
 |:------|:----------:|:-------------|------|
