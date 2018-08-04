@@ -9,6 +9,10 @@ These deployments:
 
 ### Overview
 
+| Demo  | Description |
+|:------|:------------|
+| [create-react-app](https://cra.now.sh) | Deploy, test and build CRA |
+
 ## Serverless Docker (V2)
 
 These deployments:
