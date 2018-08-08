@@ -1,5 +1,5 @@
 #!/bin/bash
-php-fpm &
+php-fpm --allow-to-run-as-root &
 wait-for /tmp/php5-fpm.sock
 echo "php-fpm started"
 nginx &

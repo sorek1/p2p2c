@@ -45,11 +45,9 @@ These deployments:
 | [node-micro](https://node-micro-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | A microservice in Node written with [micro](https://github.com/zeit/micro) | 19.6M |
 | [node-react](https://node-react-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | Deploys a react app created using [create-react-app](https://github.com/facebook/create-react-app) | 700K |
 | [php-7-hello-world](https://php-7-hello-world-v2.now.sh) | [PHP](https://en.wikipedia.org/wiki/PHP) | A tiny website served using [php-fpm](https://php-fpm.org/) | 6.4M |
-| php-wordpress\* | [PHP](https://en.wikipedia.org/wiki/PHP) | A [wordpress](https://wordpress.org/) | NaN |
+| [php-wordpress](https://php-wordpress-v2.now.sh) | [PHP](https://en.wikipedia.org/wiki/PHP) | An example running [WordPress](https://wordpress.org/) backed by a SQLite database| 45.3M |
 | [python-django](https://python-django-v2.now.sh) | [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) | A [Django](https://www.djangoproject.com/) app | 49.1M |
 | [python-flask](https://python-flask-v2.now.sh) | [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) | A [Flask](http://flask.pocoo.org/) app | 38.1M |
 | [python-hello-world](https://python-hello-world-v2.now.sh) | [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) | A webserver powered by the built-in [http.server](https://docs.python.org/3/library/http.server.html) module | 33.1M |
 | [ruby-http-sinatra](https://ruby-http-sinatra-v2.now.sh) | [Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) | A [Sinatra](http://sinatrarb.com/) app | 58.7M |
 | [rust-http-microservice](https://rust-http-microservice-v2.now.sh) | [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) | A webserver powered by [hyper](https://hyper.rs/) | 2.3M |
-
-\*The `php-wordpress` demo is coming soon.
