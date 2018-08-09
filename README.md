@@ -36,6 +36,7 @@ These deployments:
 | [java-spark-graal](https://java-spark-graal-v2.now.sh) | [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) | Uses the [`Spark`](http://sparkjava.com/) framework and packages with [GraalVM `native-image`](http://www.graalvm.org/) | 5.3M |
 | [misc-chat-roulette](https://misc-chat-roulette-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | Implements a [WebSocket](https://en.wikipedia.org/wiki/WebSocket) server with a max concurrency of `2` | 19.3M |
 | [misc-dump](https://misc-dump-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | An app that simply logs information about incoming requests and the system it's running on | 26.1M |
+| [misc-screenshot](https://misc-screenshot.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | An app that takes a screenshot of a given webpage powered by [puppeteer](https://github.com/GoogleChrome/puppeteer) | 89.6M |
 | [misc-socket.io-chat](https://misc-socketio-chat-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | The socket.io [chat demo](https://socket.io/demos/chat/) | 20.2M |
 | [misc-socket.io-whiteboard](https://misc-socketio-whiteboard-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | The socket.io [whiteboard demo](https://socket.io/demos/whiteboard/) | 20.2M |
 | [misc-web-tty](https://misc-web-tty-v2.now.sh) | [Go](https://en.wikipedia.org/wiki/Go_(programming_language)) | A fully functional terminal in the browser powered by [gotty](https://github.com/yudai/gotty) | 6.1M |
