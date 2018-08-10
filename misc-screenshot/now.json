@@ -7,5 +7,5 @@
   "limits": {
     "maxConcurrentReqs": 2
   },
-  "slot": "staging-chrome"
+  "slot": "c1-m4096"
 }
