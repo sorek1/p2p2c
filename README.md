@@ -6,8 +6,9 @@
 
 These deployments:
 
-- Have a build phase and then are served fully statically
-- Get cached automatically by the Now CDN
+- Have a build phase powered by `Dockerfile`
+- Are generated once and served fully statically
+- Get cached automatically by the [Now CDN](https://zeit.co/cdn)
 
 ### Overview
 
