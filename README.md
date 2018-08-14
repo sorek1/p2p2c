@@ -14,6 +14,7 @@ These deployments:
 
 | Demo  | Description | Size |
 |:------|:------------|:---- |
+| [static-jekyll](https://static-jekyll.now.sh) | A basic Jekyll powered site | 61K |
 | [static-mdx-deck](https://static-mdx-deck.now.sh/) | A simple presentation built with mdx-deck | 299K |
 | [static-next.js](https://static-nextjs.now.sh) | A simple statically exported Next.js application | 242K |
 | [static-parcel](https://static-parcel.now.sh) | A simple website built using [Parcel](https://parceljs.org) | 20K |
