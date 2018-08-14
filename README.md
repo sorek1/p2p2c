@@ -19,6 +19,7 @@ These deployments:
 | [static-next.js](https://static-nextjs.now.sh) | A simple statically exported Next.js application | 242K |
 | [static-parcel](https://static-parcel.now.sh) | A simple website built using [Parcel](https://parceljs.org) | 20K |
 | [static-react](https://cra.now.sh) | Deploy, test and build [CRA](https://github.com/facebook/create-react-app) | 635K |
+| [static-webpack](https://static-webpack.now.sh) | A simple website built using [webpack](https://webpack.js.org) | 8K |
 
 ## Serverless Docker (V2)
 
