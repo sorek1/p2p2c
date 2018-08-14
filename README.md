@@ -14,9 +14,10 @@ These deployments:
 
 | Demo  | Description | Size |
 |:------|:------------|:---- |
-| [static-jekyll](https://static-jekyll.now.sh) | A basic Jekyll powered site | 61K |
-| [static-mdx-deck](https://static-mdx-deck.now.sh/) | A simple presentation built with mdx-deck | 299K |
-| [static-next.js](https://static-nextjs.now.sh) | A simple statically exported Next.js application | 242K |
+| [static-hugo](https://static-hugo.now.sh) | A static site built by [Hugo](https://gohugo.io/) | 236K |
+| [static-jekyll](https://static-jekyll.now.sh) | A basic [Jekyll](https://jekyllrb.com/) powered site | 61K |
+| [static-mdx-deck](https://static-mdx-deck.now.sh/) | A simple presentation built with [mdx-deck](https://github.com/jxnblk/mdx-deck) | 299K |
+| [static-next.js](https://static-nextjs.now.sh) | A simple statically exported [Next.js](https://nextjs.org/) application | 242K |
 | [static-parcel](https://static-parcel.now.sh) | A simple website built using [Parcel](https://parceljs.org) | 20K |
 | [static-react](https://cra.now.sh) | Deploy, test and build [CRA](https://github.com/facebook/create-react-app) | 635K |
 | [static-webpack](https://static-webpack.now.sh) | A simple website built using [webpack](https://webpack.js.org) | 8K |
