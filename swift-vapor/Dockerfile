@@ -14,4 +14,4 @@ COPY --from=builder /build/.build/x86_64-unknown-linux/release/Run .
 RUN tar -xzvf swift_libs.tar.gz -C /
 RUN rm -rf usr/lib lib lib64 swift_libs.tar.gz
 
-ENTRYPOINT ./Run serve -e prod -b 0.0.0.0
+CMD ["./Run", "serve", "-e", "prod", "-b", "0.0.0.0"]
