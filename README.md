@@ -14,6 +14,7 @@ These deployments:
 
 | Demo  | Description | Size |
 |:------|:------------|:---- |
+| [static-gatsby](https://static-gatsby.now.sh) | A  static site built with [Gatsby](https://www.gatsbyjs.org/) | 3.1M |
 | [static-hugo](https://static-hugo.now.sh) | A static site built by [Hugo](https://gohugo.io/) | 236K |
 | [static-jekyll](https://static-jekyll.now.sh) | A basic [Jekyll](https://jekyllrb.com/) powered site | 61K |
 | [static-mdx-deck](https://static-mdx-deck.now.sh/) | A simple presentation built with [mdx-deck](https://github.com/jxnblk/mdx-deck) | 299K |
