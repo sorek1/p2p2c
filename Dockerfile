@@ -7,12 +7,12 @@ RUN apk --update --no-cache add curl libstdc++ libgcc && \
     mv now-alpine /bin/now
 ARG NOW_TOKEN
 COPY . .
-RUN find . -maxdepth 1 -type d '!' -path '.' '!' -path './.*' -print0 | \
+RUN find . -maxdepth 1 -type d '!' -path '.' '!' -path './meta' -print0 | \
     sort -z | \
-    xargs -0 -n 1 -I{} ./.now/deploy {} "$NOW_TOKEN" && \
-    echo "</ul></body></html>" >> .now/index.html
+    xargs -0 -n 1 -I{} ./meta/deploy {} "$NOW_TOKEN" && \
+    echo "</ul></body></html>" >> meta/index.html
 
 FROM jtyr/asmttpd
-COPY --from=base /usr/src/app/.now/index.html /data
-COPY --from=base /usr/src/app/.now/css /data/css
-COPY --from=base /usr/src/app/.now/images /data/images
+COPY --from=base /usr/src/app/meta/index.html /data
+COPY --from=base /usr/src/app/meta/css /data/css
+COPY --from=base /usr/src/app/meta/images /data/images
