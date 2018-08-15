@@ -60,3 +60,4 @@ These deployments:
 | [python-hello-world](https://python-hello-world-v2.now.sh) | [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) | A webserver powered by the built-in [http.server](https://docs.python.org/3/library/http.server.html) module | 33.1M |
 | [ruby-http-sinatra](https://ruby-http-sinatra-v2.now.sh) | [Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) | A [Sinatra](http://sinatrarb.com/) app | 58.7M |
 | [rust-http-microservice](https://rust-http-microservice-v2.now.sh) | [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) | A webserver powered by [hyper](https://hyper.rs/) | 2.3M |
+| [swift-vapor](https://swift-vapor-v2.now.sh) | [Swift](https://swift.org/) | Server-side Swift example using [Vapor](https://vapor.codes/) | 35.7M |
