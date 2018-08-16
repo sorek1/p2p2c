@@ -49,7 +49,7 @@ These deployments:
 | [misc-socket.io-chat](https://misc-socketio-chat-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | The socket.io [chat demo](https://socket.io/demos/chat/) | 20.2M |
 | [misc-socket.io-whiteboard](https://misc-socketio-whiteboard-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | The socket.io [whiteboard demo](https://socket.io/demos/whiteboard/) | 20.2M |
 | [misc-web-tty](https://misc-web-tty-v2.now.sh) | [Go](https://en.wikipedia.org/wiki/Go_(programming_language)) | A fully functional terminal in the browser powered by [gotty](https://github.com/yudai/gotty) | 6.1M |
-| [node-next.js](https://node-nextjs-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) |A simple Next.js application with Server Side Rendering | 86.1M | 
+| [node-next.js](https://node-nextjs-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) |A simple Next.js application with Server Side Rendering | 86.1M |
 | [node-hello-world](https://node-hello-world-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | A minimal (1LOC) server in node | 19.2M |
 | [node-http-microservice-pkg](https://node-http-microservice-pkg-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | A microservice in Node, packaged with [pkg](https://github.com/zeit/pkg) | 19.3M |
 | [node-micro](https://node-micro-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | A microservice in Node written with [micro](https://github.com/zeit/micro) | 19.6M |
@@ -62,6 +62,7 @@ These deployments:
 | [python-hello-world](https://python-hello-world-v2.now.sh) | [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) | A webserver powered by the built-in [http.server](https://docs.python.org/3/library/http.server.html) module | 33.1M |
 | [ruby-http-sinatra](https://ruby-http-sinatra-v2.now.sh) | [Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) | A [Sinatra](http://sinatrarb.com/) app | 58.7M |
 | [rust-http-microservice](https://rust-http-microservice-v2.now.sh) | [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) | A webserver powered by [hyper](https://hyper.rs/) | 2.3M |
+| [rust-rocket](https://rust-rocket-v2.now.sh) | [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) | A webserver powered by [Rocket](https://rocket.rs/) | 2.7M |
 | [swift-http-server](https://swift-http-server-v2.now.sh) | [Swift](https://swift.org/) | Example Swift hello world using [HTTP Server](https://swift-server.github.io/http/) | 33.0M |
 | [swift-kitura](https://swift-kitura-v2.now.sh) | [Swift](https://swift.org/) | Swift server written with IBM's [Kitura](https://github.com/IBM-Swift/Kitura) | 33.9M |
 | [swift-vapor](https://swift-vapor-v2.now.sh) | [Swift](https://swift.org/) | Server-side Swift example using [Vapor](https://vapor.codes/) | 35.7M |
