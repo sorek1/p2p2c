@@ -19,6 +19,7 @@ These deployments:
 | [static-jekyll](https://static-jekyll.now.sh) | A basic [Jekyll](https://jekyllrb.com/) powered site | 61K |
 | [static-mdx-deck](https://static-mdx-deck.now.sh/) | A simple presentation built with [mdx-deck](https://github.com/jxnblk/mdx-deck) | 299K |
 | [static-next.js](https://static-nextjs.now.sh) | A simple statically exported [Next.js](https://nextjs.org/) application | 242K |
+| [static-nuxt.js](https://static-nuxtjs.now.sh) | A simple statically generated [Nuxt.js](https://nextjs.org/) application | 209K |
 | [static-parcel](https://static-parcel.now.sh) | A simple website built using [Parcel](https://parceljs.org) | 20K |
 | [static-react](https://cra.now.sh) | Deploy, test and build [CRA](https://github.com/facebook/create-react-app) | 635K |
 | [static-webpack](https://static-webpack.now.sh) | A simple website built using [webpack](https://webpack.js.org) | 8K |
