@@ -60,7 +60,7 @@ WORKDIR /usr/src
 ENV NODE_ENV="production"
 COPY --from=base /usr/src .
 EXPOSE 3000
-CMD ["yarn", "start"]
+CMD ["node", "./node_modules/.bin/next", "start"]
 ```
 
 ## Step 5: Set files to ignore with Docker
