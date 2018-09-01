@@ -9,6 +9,6 @@ public class Main {
 
     public static void main(String[] args) {
         Vertx.vertx().createHttpServer().requestHandler(request -> request.response().end("Hello world!")).listen(8080);
-        LOGGER.info("Server listening on port 8080.");
+        LOGGER.info("Application listening on port 8080.");
     }
 }
