@@ -52,6 +52,7 @@ These deployments:
 | [misc-socket.io-chat](https://misc-socketio-chat-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | The socket.io [chat demo](https://socket.io/demos/chat/) | 20.2M |
 | [misc-socket.io-whiteboard](https://misc-socketio-whiteboard-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | The socket.io [whiteboard demo](https://socket.io/demos/whiteboard/) | 20.2M |
 | [misc-web-tty](https://misc-web-tty-v2.now.sh) | [Go](https://en.wikipedia.org/wiki/Go_(programming_language)) | A fully functional terminal in the browser powered by [gotty](https://github.com/yudai/gotty) | 6.1M |
+| [node-adonisjs](https://node-adonisjs-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | A minimal AdonisJs application | 21.6M |
 | [node-next.js](https://node-nextjs-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) |A simple Next.js application with Server Side Rendering | 86.1M |
 | [node-nuxt.js](https://node-nuxtjs-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) |A simple Nuxt.js application with Server Side Rendering | 37.9M |
 | [node-hello-world](https://node-hello-world-v2.now.sh) | [Node.js](https://en.wikipedia.org/wiki/Node.js) | A minimal (1LOC) server in node | 19.2M |
