@@ -63,6 +63,7 @@ These deployments:
 | [ocaml-graphql](https://ocaml-graphql-example.now.sh/graphql) | [OCaml](https://en.wikipedia.org/wiki/OCaml) | Deploys an OCaml GraphQL server using [ocaml-graphql-server](https://github.com/andreas/ocaml-graphql-server) | 2.8M |
 | [php-7-hello-world](https://php-7-hello-world-v2.now.sh) | [PHP](https://en.wikipedia.org/wiki/PHP) | A tiny website served using [php-fpm](https://php-fpm.org/) | 6.4M |
 | [php-wordpress](https://php-wordpress-v2.now.sh) | [PHP](https://en.wikipedia.org/wiki/PHP) | An example running [WordPress](https://wordpress.org/) backed by a SQLite database| 45.3M |
+| [php-laravel](https://php-laravel-v2.now.sh) | [PHP](https://en.wikipedia.org/wiki/PHP) | A [Laravel](https://laravel.com) app | 38.8M |
 | [python-django](https://python-django-v2.now.sh) | [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) | A [Django](https://www.djangoproject.com/) app | 49.1M |
 | [python-flask](https://python-flask-v2.now.sh) | [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) | A [Flask](http://flask.pocoo.org/) app | 38.1M |
 | [python-hello-world](https://python-hello-world-v2.now.sh) | [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) | A webserver powered by the built-in [http.server](https://docs.python.org/3/library/http.server.html) module | 33.1M |
