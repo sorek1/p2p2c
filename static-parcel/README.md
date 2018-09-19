@@ -16,7 +16,7 @@ Add the following `now.json` which will:
 
 - Define the type of deployment as `static`
 - Configure the deployment to be public
-- Set the [build environment variable](https://zeit.co/docs/features/build-env-and-secrets) BUNDLE to have the value `Parcek`
+- Set the [build environment variable](https://zeit.co/docs/features/build-env-and-secrets) BUNDLER to have the value `Parcel`
 
 
 ```json
