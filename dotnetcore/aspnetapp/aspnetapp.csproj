@@ -2,7 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <CrossGenDuringPublish>false</CrossGenDuringPublish>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <LinkerRootAssemblies Include="Microsoft.AspNetCore.Razor.Runtime;Microsoft.AspNetCore.Mvc.Core;" />
+  </ItemGroup> 
+
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
