@@ -7,7 +7,7 @@ RUN apk --update --no-cache add curl libstdc++ libgcc && \
     mv now-alpine /bin/now
 ARG NOW_TOKEN
 COPY . .
-RUN find . -maxdepth 1 -type d '!' -path '.' '!' -path './meta' -print0 | \
+RUN find . -maxdepth 1 -type d '!' -path '.' '!' -path './meta' '!' -path './.github' -print0 | \
     sort -z | \
     xargs -0 -n 1 -I{} ./meta/deploy {} "$NOW_TOKEN" && \
     echo "</ul></body></html>" >> meta/index.html
