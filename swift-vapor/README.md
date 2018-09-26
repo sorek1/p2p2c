@@ -7,9 +7,7 @@ In this example we will be building and deploying an API with Vapor web framewor
 #### Create a new folder with the name of your app
 
 ```
-mkdir Hello
-
-cd Hello
+mkdir Hello && cd Hello
 ```
 
 #### Add a Package.swift
@@ -36,7 +34,9 @@ let package = Package(
 
 ```
 mkdir -p Sources/Run
+```
 
+```
 touch Sources/Run/main.swift
 ```
 
@@ -167,4 +167,6 @@ By just adding the features key, we can specify the Now cloud to use.
 
 We are now ready to deploy the app.
 
-`now`
+```
+now
+```

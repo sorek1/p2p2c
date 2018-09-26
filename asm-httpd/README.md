@@ -7,9 +7,7 @@ In this example we will be building and deploying an static site using Assembly 
 #### Create a new folder with the name of your app
 
 ```
-mkdir my-app
-
-cd my-app
+mkdir my-app && cd my-app
 ```
 
 #### Add an index.html file
@@ -71,4 +69,6 @@ By just adding the features key, we can specify the Now cloud to use.
 
 We are now ready to deploy the app.
 
-`now`
+```
+now
+```

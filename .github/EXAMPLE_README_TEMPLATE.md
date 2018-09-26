@@ -12,4 +12,25 @@ Description
 #### .dockerignore
 
 ### Deploy with Now
-`now`
+
+First we need to add a `now.json` file to specify we want to use our Cloud V2.
+
+```
+touch now.json
+```
+
+By just adding the features key, we can specify the Now cloud to use.
+
+```
+{
+  "features": {
+    "cloud": "v2"
+  }
+}
+```
+
+We are now ready to deploy the app.
+
+```
+now
+```
