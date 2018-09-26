@@ -1,10 +1,10 @@
-# Building and Deploying an static site using Assembly
+# asm-httpd
 
-We will be using [asm-http](https://github.com/jcalvinowens/asmhttpd) A minimalist HTTP server for Linux, written in x86_64 assembly
+In this example we will be building and deploying an static site using Assembly using [asm-http](https://github.com/jcalvinowens/asmhttpd), a minimalist HTTP server for Linux, written in x86_64 assembly.
 
-## Getting started with Assembly HTTP
+### Getting started with Assembly HTTP
 
-### Create a new folder with the name of your app
+#### Create a new folder with the name of your app
 
 ```
 mkdir my-app
@@ -12,22 +12,22 @@ mkdir my-app
 cd my-app
 ```
 
-### Add an index.html file
+#### Add an index.html file
 
 ```
 <marquee direction=right>Hello ASM!</marquee>
 ```
 
-## Adding Dockerfile for Assembly HTTP
+### Adding Dockerfile for Assembly HTTP
 
-### Instructions
+#### Instructions
 
 We will create a `Dockerfile` to:
 
 - Start build a project on asmhttp
 - Copy the static files
 
-### Dockerfile
+#### Dockerfile
 
 We will start buy using a prebuilt Docker image with [asmttpd](https://hub.docker.com/r/jtyr/asmttpd/). This image expects all content to be added to the `/data` folder on the image so we will copy the index.html to be served.
 
@@ -36,7 +36,7 @@ FROM jtyr/asmttpd
 COPY index.html /data
 ```
 
-### Add a .dockerignore
+#### Add a .dockerignore
 
 We can tell to Docker which files should only be required for building the project using an `.dockerignore` file.
 
@@ -51,7 +51,7 @@ For this project we only need the index.html for the static site.
 !index.html
 ```
 
-## Deploy with Now
+### Deploy with Now
 
 First we need to add a `now.json` file to specify we want to use our Cloud V2.
 

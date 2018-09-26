@@ -1,15 +1,15 @@
-# Building and Deploying <Project>
+# <Project>
 Description
 
-## Getting started with <Project>
-### Step 1
-### Step 2
-### Step n
+### Getting started with <Project>
+#### Step 1
+#### Step 2
+#### Step n
 
-## Adding Dockerfile for <Project>
-### Instructions
-### Dockerfile
-### .dockerignore
+### Adding Dockerfile for <Project>
+#### Instructions
+#### Dockerfile
+#### .dockerignore
 
-## Deploy with Now
+### Deploy with Now
 `now`

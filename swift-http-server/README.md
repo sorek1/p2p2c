@@ -1,10 +1,10 @@
-# Building and Deploying an API with the Swift Server Project HTTP
+# swift-http-server
 
-Swift Server Project HTTP is a project by the Swift Server Work Group to create http servers with Swift.
+In this example we will be building and deploying a server with the Swift Server Project HTTP library for Swift. Swift Server Project HTTP is a project by the Swift Server Work Group to create http servers with Swift. For more information, visit [https://github.com/swift-server/http](https://github.com/swift-server/http).
 
-## Getting started with Swift Server Project HTTP
+### Getting started with Swift Server Project HTTP
 
-### Create a new folder with the name of your app
+#### Create a new folder with the name of your app
 
 ```
 mkdir Hello
@@ -12,7 +12,7 @@ mkdir Hello
 cd Hello
 ```
 
-### Add a Package.swift
+#### Add a Package.swift
 
 ```
 // swift-tools-version:4.0
@@ -31,7 +31,7 @@ let package = Package(
 
 > Update the name key with your app name
 
-### Create directories and main.swift file
+#### Create directories and main.swift file
 
 ```
 mkdir -p Sources/Run
@@ -39,7 +39,7 @@ mkdir -p Sources/Run
 touch Sources/Run/main.swift
 ```
 
-### Import Foundation an HTTP from Swift Server Project HTTP and create an app
+#### Import Foundation an HTTP from Swift Server Project HTTP and create an app
 
 ```
 import Foundation
@@ -58,15 +58,15 @@ try! server.start(port: 8080, handler: hello)
 RunLoop.current.run()
 ```
 
-### Run you the app locally
+#### Run you the app locally
 
 ```
 swift run
 ```
 
-## Adding Dockerfile for Swift Server Project HTTP
+### Adding Dockerfile for Swift Server Project HTTP
 
-### Instructions
+#### Instructions
 
 We will create a `Dockerfile` with multi stage builds to:
 
@@ -77,7 +77,7 @@ We will create a `Dockerfile` with multi stage builds to:
 - Create a new lighter Docker image to reduce boot time
 - Pull built files and production dependencies from previous steps
 
-### Dockerfile
+#### Dockerfile
 
 We will start buy using a Swift official Docker image to install the dependencies and build the project, after that we will use the official busybox Docker image to have the minimum requirements and lower the Docker image size to run the app and copy all the files.
 
@@ -105,7 +105,7 @@ CMD ["./Run", "serve", "-e", "prod", "-b", "0.0.0.0"]
 
 We will need to create the pkg-swift-deps.sh so we can pack all the Swift dependencies and run them on busybox which doesn't have Swift installed.
 
-### Script to pacakge all swift dependencies
+#### Script to pacakge all swift dependencies
 
 Create a script file
 
@@ -126,7 +126,7 @@ DEPS=$(ldd $BIN | awk 'BEGIN{ORS=" "}$1\
 tar $TAR_FLAGS $OUTPUT_TAR $DEPS
 ```
 
-### Add a .dockerignore
+#### Add a .dockerignore
 
 We can tell to Docker which files should only be required for building the project using an `.dockerignore` file.
 
@@ -143,7 +143,7 @@ For this project we only need the Package.swift, the Sources and the Swift depen
 !pkg-swift-deps.sh
 ```
 
-## Deploy with Now
+### Deploy with Now
 
 First we need to add a `now.json` file to specify we want to use our Cloud V2.
 
