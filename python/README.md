@@ -4,7 +4,7 @@ In this example we will be deploying a simple "Hello World" example with Python.
 
 ### Getting started with Python
 
-- Create a `index.go` file with the following code:
+- Create a `index.py` file with the following code:
 
 ```
 import datetime
