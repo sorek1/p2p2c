@@ -69,18 +69,24 @@ export default () => (
 );
 ```
 
+- Finally in order for Next.js to be deployed we could either have a `next.config.js` or a `package.json`, for this example we are just going to create a `next.config.js` with the following code:
+
+```
+module.exports = {}
+```
+
 ### Deploy with Now
 
 First we need to add a `now.json` file to specify we want to use our Platform V2.
 
-By just adding the version key, we can specify which Now Platform to use. We also need to define each builders we would like to use, in this case we are going to use @now/next to build and deploy the all JavaScript files inside the `pages` directory. We will also define a name for our project (optional).
+By just adding the version key, we can specify which Now Platform to use. We also need to define each builders we would like to use, in this case we are going to use @now/next to build and deploy our Next.js application selecting the `next.config.js` as our entry point. We will also define a name for our project (optional).
 
 ```
 {
     "version": 2,
     "name": "nextjs",
     "builds": [
-        { "src": "pages/*.js", "use": "@now/next" }
+        { "src": "next.config.js", "use": "@now/next" }
     ]
 }
 ```
