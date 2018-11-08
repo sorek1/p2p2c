@@ -2,30 +2,21 @@
 Description
 
 ### Getting started with <Project>
-#### Step 1
-#### Step 2
-#### Step n
 
-### Adding Dockerfile for <Project>
-#### Instructions
-#### Dockerfile
-#### .dockerignore
+- Step 1
+- Step 2
+- Step N
 
 ### Deploy with Now
 
-First we need to add a `now.json` file to specify we want to use our Cloud V2.
+First we need to add a `now.json` file to specify we want to use our Platform V2.
 
-```
-touch now.json
-```
-
-By just adding the features key, we can specify the Now cloud to use.
+By just adding the version key, we can specify which Now Platform to use. We also need to define each builders we would like to use, in this case we are going to use @now/go to build and deploy the date.go file. By default all other files will be statically served.
 
 ```
 {
-  "features": {
-    "cloud": "v2"
-  }
+    "version": 2,
+    "builds": []
 }
 ```
 

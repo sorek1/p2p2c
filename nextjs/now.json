@@ -1,0 +1,7 @@
+{
+    "version": 2,
+    "name": "nextjs",
+    "builds": [
+        { "src": "pages/*.js", "use": "@now/next" }
+    ]
+}

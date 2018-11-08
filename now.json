@@ -1,12 +1,11 @@
 {
-  "type": "docker",
-  "alias": "now-examples.now.sh",
-  "features": {
-    "cloud": "v2"
-  },
-  "build": {
-    "env": {
-      "NOW_TOKEN": "@now-token"
-    }
-  }
+    "version": 2,
+    "name": "now-examples",
+    "builds": [
+        { "src": "go/*.go", "use": "@now/go" },
+        { "src": "nodejs/*.js", "use": "@now/node" },
+        { "src": "php-7/*.php", "use": "@now/php" },
+        { "src": "python/*.py", "use": "@now/python" },
+        { "src": "static/**", "use": "@now/static" }
+    ]
 }

@@ -1,9 +1,0 @@
-{
-  "name": "node-http-microservice",
-  "dependencies": {
-    "micro": "9.3.1"
-  },
-  "license": "MIT",
-  "main": "./src/index.js",
-  "bin": "./src/main.js"
-}
