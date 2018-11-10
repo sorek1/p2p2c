@@ -38,6 +38,17 @@ By just adding the version key, we can specify which Now Platform to use. We als
 }
 ```
 
+Add the `now-build` script to `package.json:
+
+```
+"scripts": {
+  "serve": "vue-cli-service serve",
+  "build": "vue-cli-service build",
+  "now-build": "npm run build",
+  "lint": "vue-cli-service lint"
+},
+```
+
 We are now ready to deploy the app.
 
 ```
