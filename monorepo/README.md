@@ -32,13 +32,13 @@ module.exports = (req, res) => {
 };
 ```
 
-- We will do the same for PHP creating a file named `api/node/index.php` with the following code:
+- We will do the same for PHP creating a file named `api/php/index.php` with the following code:
 
 ```
 <?php echo date("r")?>
 ```
 
-- And lastly let's create a file named `api/node/index.py` with the following Python code:
+- And lastly let's create a file named `api/python/index.py` with the following Python code:
 
 ```
 import datetime
