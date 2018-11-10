@@ -6,6 +6,7 @@
         { "src": "nodejs/*.js", "use": "@now/node" },
         { "src": "php-7/*.php", "use": "@now/php" },
         { "src": "python/*.py", "use": "@now/python" },
+        { "src": "vue/package.json", "use": "@now/static-build" },
         { "src": "static/**", "use": "@now/static" }
     ]
 }
