@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "now-build": "next build && next export -o dist"
+  },
+  "dependencies": {
+    "next": "latest"
+  }
+}
