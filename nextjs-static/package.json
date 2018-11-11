@@ -3,6 +3,8 @@
     "now-build": "next build && next export -o dist"
   },
   "dependencies": {
-    "next": "latest"
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   }
 }
