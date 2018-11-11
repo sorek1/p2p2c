@@ -341,7 +341,7 @@ Next we will add a routes key, which will handle routing for our Monorepo poitin
 ```
 {
     "version": 2,
-    "name": "monorepo"
+    "name": "monorepo",
     "builds": [
         { "src": "www/package.json", "use": "@now/next" },
         { "src": "api/go/*.go", "use": "@now/go" },
