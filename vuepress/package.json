@@ -1,0 +1,14 @@
+{
+  "name": "vuepress",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "now-build": "npm run build && mv docs/.vuepress/dist dist"
+  },
+  "devDependencies": {
+    "vuepress": "^0.14.4"
+  }
+}
