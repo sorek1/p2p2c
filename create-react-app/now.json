@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "name": "cra",
   "builds": [
     {"src": "package.json", "use": "@now/static-build"}
   ],
