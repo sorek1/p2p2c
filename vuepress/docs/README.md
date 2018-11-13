@@ -1,1 +1,1 @@
-# Hello From Vuepress on Lambda!
+# Hello From Vuepress on Now 2.0!

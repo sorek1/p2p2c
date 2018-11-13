@@ -7,7 +7,7 @@ In this example we will be deploying a simple "Hello World" example with PHP.
 - Create a `index.php` file with the following code:
 
 ```
-<?php echo "Hi from Now Lambda"; ?>
+<?php echo "Hello from PHP on Now 2.0!"; ?>
 ```
 
 ### Deploy with Now

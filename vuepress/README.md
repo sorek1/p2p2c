@@ -27,7 +27,7 @@ After we having installed Vuepress we are ready to start creating our docs using
 
 
 ```
-# Hello From Vuepress on Lambda!
+# Hello From Vuepress on Now 2.0!
 ```
 
 Next we will create another section called Guide by creating a folder called `guide` with a `README.md` and the following code in it:

@@ -13,7 +13,7 @@ In this example we will be deploying a simple "Hello World" example with static 
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-		<marquee direction="right">Hello from Static on Now Lambda!</marquee>
+		<marquee direction="right">Hello from Static on Now 2.0!</marquee>
 	</body>
 </html>
 ```
