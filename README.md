@@ -30,3 +30,11 @@
 | [MDX Deck](/mdx-deck) | [https://mdx-deck-v2.now.sh](https://mdx-deck-v2.now.sh) | A presentation using MDX Deck        |
 | [HTML Minifier](/html-minifier) | [https://html-minifier-v2.now.sh](https://html-minifier-v2.now.sh) | A simplme HTML minification example        |
 | [OptiPNG](/optipng) | [https://optipng-v2.now.sh](https://optipng-v2.now.sh) | A PNG optimize example using OptiPNG      |
+
+---
+
+### Fully Working Applications
+
+| Example    | Demo     | Description     |
+|:---------- |:---------|:----------------|
+| [Next News](/nextjs-news) | [https://nextjs-news-v2.now.sh](https://nextjs-news-v2.now.sh) | A Hacker News clone created with Next.js deployed to Now 2.0 |
