@@ -59,7 +59,7 @@ class AboutPage extends Component {
 export default AboutPage;
 ```
 
-- As you might noticed we have a component that is share by both `index.js` and `about.js` files, lets create that one now. Create a folder named `components` with a file named `header.js` on it and add the following code:
+- As you might noticed we have a component that is shared by both `index.js` and `about.js` files, let's create that one now. Create a folder named `components` with a file named `header.js` in it and add the following code:
 
 ```
 export default () => (
@@ -79,7 +79,7 @@ module.exports = {}
 
 First we need to add a `now.json` file to specify we want to use our Platform V2.
 
-By just adding the version key, we can specify which Now Platform to use. We also need to define each builders we would like to use, in this case we are going to use @now/next to build and deploy our Next.js application selecting the `next.config.js` as our entry point. We will also define a name for our project (optional).
+By just adding the version key, we can specify which Now Platform to use. We also need to define which builders we would like to use, in this case we are going to use @now/next to build and deploy our Next.js application selecting the `next.config.js` as our entry point. We will also define a name for our project (optional).
 
 ```
 {
