@@ -30,6 +30,18 @@ By just adding the version key, we can specify which Now Platform to use. We als
 }
 ```
 
+Add the `now-build` script to `package.json`:
+
+```
+"scripts": {
+  "now-build": "npm run build && mv build dist",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
+```
+
 We are now ready to deploy the app.
 
 ```
