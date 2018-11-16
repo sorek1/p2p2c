@@ -4,7 +4,7 @@ const port = process.env.PORT || 3000
 const app = express()
 
 app.get('/', (req, res) => {
-    res.send('<h1><marquee>Deployment with ▲Now</marquee></h1>')
+    res.send('<h1><marquee direction=right>Hello from Express on Now 2.0!</marquee></h1>')
     res.end()
 })
 
