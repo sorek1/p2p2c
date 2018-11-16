@@ -13,6 +13,7 @@ npx create-react-app <project name>
 ### Deploy with Now
 
 First we need to add a command into the `package.json` file.
+
 ```json
 {
     "scripts": {
@@ -37,18 +38,6 @@ By just adding the version key, we can specify which Now Platform to use. We als
       {"src": ".*", "dest": "/index.html"}
     ]
 }
-```
-
-Add the `now-build` script to `package.json`:
-
-```
-"scripts": {
-  "now-build": "npm run build && mv build dist",
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
-},
 ```
 
 We are now ready to deploy the app.
