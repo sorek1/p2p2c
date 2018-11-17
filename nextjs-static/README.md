@@ -70,7 +70,7 @@ First you need to tell Now how to build the app using the `now-build` script in 
 ```json
 {
   "scripts": {
-    "now-build": "yarn build && yarn export -o dist"
+    "now-build": "next build && next export -o dist"
   }
 }
 ```
@@ -83,7 +83,7 @@ By just adding the version key, we can specify which Now Platform to use. We als
 {
   "version": 2,
   "name": "nextjs",
-  "builds": [{ "src": "next.config.js", "use": "@now/static-build" }]
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
 }
 ```
 
