@@ -21,10 +21,12 @@ By just adding the version key, we can specify which Now Platform to use. We als
     "version": 2,
     "name": "gatsby",
     "builds": [
-        { "src": "package.json", "use": "@now/static-build" }
+        { "src": "package.json", "use": "@now/static-build", "config": {"distDir": "dist"} }
     ]
 }
 ```
+
+Now, since it uses `@now/static-build`, we need to also include a script in `package.json` named `"now-build"`. This script specifies what command now will run on the server to "build" your application. Also, notice that this builder accepts a configuration called `"distDir"`, that will move all production files to the given folder.
 
 We are now ready to deploy the app.
 

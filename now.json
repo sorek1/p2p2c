@@ -14,6 +14,7 @@
         { "src": "html-minifier/index.html", "use": "@now/html-minifier" },
         { "src": "mdx-deck/deck.mdx", "use": "@now/mdx-deck" },
         { "src": "node-server/index.js", "use": "@now/node-server" },
-        { "src": "optipng/showcase.png", "use": "@now/optipng" }
+        { "src": "optipng/showcase.png", "use": "@now/optipng" },
+        { "src": "gatsby/package.json", "use": "@now/static-build", "config": {"distDir": "dist"} }
     ]
 }

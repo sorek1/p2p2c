@@ -18,7 +18,7 @@
     "prettier": "^1.14.2"
   },
   "scripts": {
-    "now-build": "npm run build && mv public dist",
+    "now-build": "npm run build",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
