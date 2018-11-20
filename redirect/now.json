@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "alias": [
+    "www.example.sh"
+  ],
+  "builds": [
+    { "src": "index.html", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "status": 301, "headers": { "Location": "https://example.sh/$1" }}
+  ]
+}
