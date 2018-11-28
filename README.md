@@ -28,6 +28,7 @@
 | [Vue](/vue) | [https://vue-v2.now.sh](https://vue-v2.now.sh) | Vue example using Vue CLI        |
 | [Vue SSR](/vue-ssr) | [https://vue-ssr-v2.now.sh](https://vue-ssr-v2.now.sh) | Vue example using server side rendering        |
 | [Vuepress](/vuepress) | [https://vuepress-v2.now.sh](https://vuepress-v2.now.sh) | A docs example using VuePress        |
+| [Nuxt Static](/nuxt-static) | [https://nuxt-static-v2.now.sh](https://nuxt-static-v2.now.sh) | A Nuxt Static exported example |
 | [Express](/nodejs-express) | [https://express-v2.now.sh](https://express-v2.now.sh) | An example using Express        |
 | [Apollo Server](/apollo) | [https://apollo-v2.now.sh](https://apollo-v2.now.sh) | An Apollo Server example using Express        |
 | [MDX Deck](/mdx-deck) | [https://mdx-deck-v2.now.sh](https://mdx-deck-v2.now.sh) | A presentation using MDX Deck        |
