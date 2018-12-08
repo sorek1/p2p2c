@@ -6,7 +6,7 @@ In this example we will be deploying a simple "Hello World" example with static 
 
 - Create a `index.html` file with the following code:
 
-```
+```html
 <html>
 	<head>
 		<title>Static Example</title>
@@ -20,7 +20,7 @@ In this example we will be deploying a simple "Hello World" example with static 
 
 - Create a `styles.css` file with the following code:
 
-```
+```css
 body {
 	background-color: #000000;
 	color: #ffffff;
@@ -29,16 +29,28 @@ body {
 
 ### Deploy with Now
 
-First we need to add a `now.json` file to specify we want to use our Platform V2.
+First we need to create a `now.json` configuration file to instruct Now how to build the project.
 
-By just adding the version key, we can specify which Now Platform to use. By default all files are will be treated as static, for this case we don't need to define any builder.
+For this example we will be using our newest version [Now 2.0](https://zeit.co/now).
 
-```
+By adding the `version` key to the `now.json` file, we can specify which Now Platform version to use.
+
+We also need to define each builders we would like to use. [Builders](https://zeit.co/docs/v2/deployments/builders/overview/) are modules that take a deployment's source and return an output, consisting of [either static files or dynamic Lambdas](https://zeit.co/docs/v2/deployments/builds/#sources-and-outputs).
+
+In this case we are going to use `@now/html-minifier` to minify the `index.html` and the `styles.css` files. We will also define a name for our project (optional).
+
+```json
 {
     "version": 2,
-    "name": "static"
+	"name": "static",
+	"builds": [
+		{ "src": "index.html", "use": "@now/html-minifier" },
+		{ "src": "styles.css", "use": "@now/html-minifier" }
+  	]
 }
 ```
+
+Visit our [documentation](https://zeit.co/docs/v2/deployments/configuration) for more information on the `now.json` configuration file.
 
 We are now ready to deploy the app.
 
