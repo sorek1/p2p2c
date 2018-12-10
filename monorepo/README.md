@@ -342,7 +342,7 @@ We also need to define each builders we would like to use. [Builders](https://ze
 
 In this case we are going to use `@now/go` to build and deploy the all GoLang files, `@now/node` to build and deploy the all JavasScript files, `@now/php` to build and deploy the all PHP files, `@now/python` to build and deploy the all Python files, and finally `@now/next` to build and deploy the our Next.js application. We will also define a name for our project (optional).
 
-Next we will add a routes key, which will handle routing for our Monorepo poiting the contents from `www` to our webroot `/` and the contents from `api` to `/api`.
+Next, we will add a routes key, which will handle routing for our Monorepo; pointing the contents from `www` to our webroot `/` and the contents from `api` to `/api`.
 
 ```json
 {
