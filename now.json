@@ -17,6 +17,7 @@
         { "src": "optipng/showcase.png", "use": "@now/optipng" },
         { "src": "nodejs-hapi/index.js", "use": "@now/node-server" },
         { "src": "nodejs-koa/index.js", "use": "@now/node" },
-        { "src": "gatsby/package.json", "use": "@now/static-build", "config": {"distDir": "public"} }
+        { "src": "gatsby/package.json", "use": "@now/static-build", "config": {"distDir": "public"} },
+        { "src": "docz/package.json", "use": "@now/static-build" }
     ]
 }

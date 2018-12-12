@@ -34,6 +34,7 @@
 | [MDX Deck](/mdx-deck) | [https://mdx-deck-v2.now.sh](https://mdx-deck-v2.now.sh) | A presentation using MDX Deck        |
 | [HTML Minifier](/html-minifier) | [https://html-minifier-v2.now.sh](https://html-minifier-v2.now.sh) | A simple HTML minification example        |
 | [OptiPNG](/optipng) | [https://optipng-v2.now.sh](https://optipng-v2.now.sh) | A PNG optimize example using OptiPNG      |
+| [docz](/docz) | [https://docz.now.sh](https://docz.now.sh) | A documentation example built with [docz](https://docz.site)       |
 
 ---
 

@@ -1,0 +1,12 @@
+{
+  "name": "my-docz-project",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "docz dev",
+    "build": "docz build",
+    "now-build": "yarn build"
+  },
+  "devDependencies": {
+    "docz": "^0.12.15"
+  }
+}
