@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "/ssr/**/*.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "*.css",
+      "use": "@now/static"
+    },
+    {
+      "src": "/img/*.png",
+      "use": "@now/static"
+    }
+  ],
+  "regions": ["iad"]
+}

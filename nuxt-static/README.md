@@ -6,24 +6,24 @@ In this example we will be deploying a simple "Hello World" example with Nuxt st
 
 - Let's start by adding a `package.json` with the following dependencies:
 
-```
+```json
 {
-  "name": "nuxt-static",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-  },
-  "dependencies": {
-    "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.11.0"
-  }
+    "name": "nuxt-static",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+    },
+    "dependencies": {
+        "cross-env": "^5.2.0",
+        "nuxt": "^2.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.11.0"
+    }
 }
 ```
 
@@ -107,7 +107,7 @@ h1 {
 
 - Finally in order for Nuxt to be deployed staticaly we will use the `package.json` and define our build options for Nuxt creating a `nuxt.config.js` with the following code:
 
-```
+```javascript
 const pkg = require('./package')
 
 module.exports = {
@@ -130,28 +130,36 @@ module.exports = {
 
 ### Deploy a Static version to Now
 
-First you need to tell Now how to build the app using the `now-build` script in your `package.json`
+First we need to create a `now.json` configuration file to instruct Now how to build the project.
+
+For this example we will be using our newest version [Now 2.0](https://zeit.co/now).
+
+By adding the `version` key to the `now.json` file, we can specify which Now Platform version to use.
+
+We also need to define each builders we would like to use. [Builders](https://zeit.co/docs/v2/deployments/builders/overview/) are modules that take a deployment's source and return an output, consisting of [either static files or dynamic Lambdas](https://zeit.co/docs/v2/deployments/builds/#sources-and-outputs).
+
+In this case we are going to use `@now/static-build` to build and deploy our Nuxt application selecting the `package.json` as our entry point. We will also define a name for our project (optional).
 
 ```json
 {
-  "scripts": {
-    ...
-    "now-build": "nuxt generate"
-  }
+    "version": 2,
+    "name": "nuxt-static",
+    "builds": [
+        { "src": "package.json", "use": "@now/static-build" }
+    ]
 }
 ```
 
-First we need to add a `now.json` file to specify we want to use our Platform V2.
+Visit our [documentation](https://zeit.co/docs/v2/deployments/configuration) for more information on the `now.json` configuration file.
 
-By just adding the version key, we can specify which Now Platform to use. We also need to define each builders we would like to use, in this case we are going to use `@now/static-build` to build and deploy our Nuxt application selecting the `package.json` as our entry point. We will also define a name for our project (optional).
+We also need to include a script in `package.json` named `"now-build"` that specifies what command Now will run on the server to "build" your application. Also notice that we are using `nuxt generate` that will create a folder called `dist` which Now identifies as the static folder.
 
 ```json
 {
-  "version": 2,
-  "name": "nuxt-static",
-  "builds": [
-    { "src": "package.json", "use": "@now/static-build" }
-  ]
+    "scripts": {
+        ...
+        "now-build": "nuxt generate"
+    }
 }
 ```
 

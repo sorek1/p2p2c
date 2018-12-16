@@ -1,0 +1,11 @@
+{
+  "name": "now-lambda-lit-html",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@popeindustries/lit-html-server": "^0.13.0",
+    "node-fetch": "^2.3.0"
+  }
+}

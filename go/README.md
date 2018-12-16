@@ -21,11 +21,17 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 ### Deploy with Now
 
-First we need to add a `now.json` file to specify we want to use our Platform V2.
+First we need to create a `now.json` configuration file to instruct Now how to build the project.
 
-By just adding the version key, we can specify which Now Platform to use. We also need to define each builders we would like to use, in this case we are going to use `@now/go` to build and deploy the all GoLang files. We will also define a name for our project (optional).
+For this example we will be using our newest version [Now 2.0](https://zeit.co/now).
 
-```
+By adding the `version` key to the `now.json` file, we can specify which Now Platform version to use.
+
+We also need to define each builders we would like to use. [Builders](https://zeit.co/docs/v2/deployments/builders/overview/) are modules that take a deployment's source and return an output, consisting of [either static files or dynamic Lambdas](https://zeit.co/docs/v2/deployments/builds/#sources-and-outputs).
+
+In this case we are going to use `@now/go` to build and deploy the all GoLang files. We will also define a name for our project (optional).
+
+```json
 {
     "version": 2,
     "name": "go",
@@ -34,6 +40,8 @@ By just adding the version key, we can specify which Now Platform to use. We als
     ]
 }
 ```
+
+Visit our [documentation](https://zeit.co/docs/v2/deployments/configuration) for more information on the `now.json` configuration file.
 
 We are now ready to deploy the app.
 
