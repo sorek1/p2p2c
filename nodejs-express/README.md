@@ -20,7 +20,11 @@ By adding the `version` key to the `now.json` file, we can specify which Now Pla
 
 We also need to define each builders we would like to use. [Builders](https://zeit.co/docs/v2/deployments/builders/overview/) are modules that take a deployment's source and return an output, consisting of [either static files or dynamic Lambdas](https://zeit.co/docs/v2/deployments/builds/#sources-and-outputs).
 
-In this case we are going to use `@now/node-server` in order to start a Node.js server using Express. We will also define a name for our project (optional).
+In this case we are going to use `@now/node-server` in order to start a Node.js server using Express.
+
+If Express app has more than 1 route defined, we need to add [`routes`](https://zeit.co/docs/v2/deployments/configuration#routes).
+
+We will also define a name for our project (optional).
 
 ```json
 {
@@ -28,6 +32,9 @@ In this case we are going to use `@now/node-server` in order to start a Node.js 
     "name": "nodejs-express",
     "builds": [
         { "src": "index.js", "use": "@now/node-server" }
+    ],
+    "routes": [
+        { "src": "/(.*)", "dest": "/index.js" }
     ]
 }
 ```
