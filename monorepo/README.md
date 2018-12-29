@@ -60,7 +60,7 @@ class handler(BaseHTTPRequestHandler):
 
 ```
 {
-  "name": "monoremo",
+  "name": "monorepo",
   "dependencies": {
     "isomorphic-unfetch": "3.0.0"
   }
