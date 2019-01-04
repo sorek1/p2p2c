@@ -6,7 +6,7 @@ In this example we will be deploying a simple "Hello World" example with Node.js
 
 - Create a `index.js` file with the following code:
 
-```
+```js
 module.exports = (req, res) => {
   res.end(`Hello from Node.js on Now 2.0!`);
 };

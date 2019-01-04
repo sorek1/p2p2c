@@ -32,7 +32,7 @@ yarn dev
 
 Initially, the project will not have any content, but you can add a file anywhere in the project that includes a `.mdx` file extension. You can create a simple file that has a name, some content, and tells docz that the route should be `/`:
 
-```
+```markdown
 ---
 name: Hello world
 route: /

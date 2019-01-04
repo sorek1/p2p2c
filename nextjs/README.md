@@ -6,7 +6,7 @@ In this example we will be deploying a simple "Hello World" example with Next.js
 
 - Create a `pages` folder with an `index.js` file with the following code:
 
-```
+```jsx
 import Link from "next/link";
 import Header from "../components/header";
 
@@ -24,7 +24,7 @@ export default () => (
 
 - Now lets create an `about.js` file inside the `pages` folder with the following code:
 
-```
+```jsx
 import { Component } from "react";
 import Link from "next/link";
 import Header from "../components/header";
@@ -61,7 +61,7 @@ export default AboutPage;
 
 - As you might noticed we have a component that is shared by both `index.js` and `about.js` files, let's create that one now. Create a folder named `components` with a file named `header.js` in it and add the following code:
 
-```
+```jsx
 export default () => (
   <header>
     <h1>Next.js Example</h1>
@@ -71,7 +71,7 @@ export default () => (
 
 - Finally in order for Next.js to be deployed we could either have a `next.config.js` or a `package.json`, for this example we are just going to create a `next.config.js` with the following code:
 
-```
+```js
 module.exports = {}
 ```
 

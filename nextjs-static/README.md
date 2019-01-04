@@ -59,7 +59,7 @@ export default () => (
 
 - Finally in order for Next.js to be deployed we could either have a `next.config.js` or a `package.json`, for this example we are just going to create a `next.config.js` with the following code:
 
-```
+```js
 module.exports = {}
 ```
 

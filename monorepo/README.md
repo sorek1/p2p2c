@@ -10,7 +10,7 @@ We will start by creating two main folders `api` which will contain all our serv
 
 - Let's start by creating a file named `api/go/index.go` and add the following GoLang code:
 
-```
+```go
 package main
 
 import (
@@ -26,7 +26,7 @@ func Time(w http.ResponseWriter, r *http.Request) {
 
 - Now we will create a file named `api/node/index.js` and add the following JavaScript code:
 
-```
+```js
 module.exports = (req, res) => {
   res.end(new Date().toString());
 };
@@ -34,13 +34,13 @@ module.exports = (req, res) => {
 
 - We will do the same for PHP creating a file named `api/php/index.php` with the following code:
 
-```
+```php
 <?php echo date("r")?>
 ```
 
 - And lastly let's create a file named `api/python/index.py` with the following Python code:
 
-```
+```python
 import datetime
 from http.server import BaseHTTPRequestHandler
 
@@ -58,7 +58,7 @@ class handler(BaseHTTPRequestHandler):
 
 - First we will create our `www` folder and add a `package.json` file including `isomorphic-unfetch` in our dependencies:
 
-```
+```json
 {
   "name": "monorepo",
   "dependencies": {
@@ -69,7 +69,7 @@ class handler(BaseHTTPRequestHandler):
 
 - Next inside the same folder let's create a `pages` folder with an `index.js` file with the following code:
 
-```
+```jsx
 import Time from '../components/time'
 import 'isomorphic-unfetch'
 
@@ -255,7 +255,7 @@ export default Page
 
 - As you might noticed we have a component called `time.js`, lets create that one now. Create a folder named `components` with a file named `time.js` on it and add the following code:
 
-```
+```jsx
 import React from 'react'
 import 'isomorphic-unfetch'
 
