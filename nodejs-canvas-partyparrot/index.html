@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Party Parrot as a Service</title>
+  <style>
+      body {
+        font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        margin: 20px;
+        word-break: break-word;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      a {
+        cursor: pointer;
+        color: #0076FF;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        border-bottom: 1px solid white;
+      }
+      a:hover {
+        border-bottom: 1px solid #0076FF;
+      }
+      ul {
+        padding: 0;
+        list-style-type: none;
+        margin-left: 15px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      li:before {
+        content: '–';
+        display: inline-block;
+        color: #999;
+        position: absolute;
+        margin-left: -15px;
+        transition: color 0.2s ease;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <h1>Party Parrot as a Service</h1>
+      <p>Built on <a href="https://github.com/francoislg/PPaaS" target="_blank">PPaaS</a> and <a href="https://zeit.co/now" target="_blank">Now 2.0</a>.</p>
+      <p><img alt="partyparrot" src="/partyparrot"/></p>
+      <ul>
+        <li>default: <a href="/partyparrot" target="_blank">/partyparrot</a></li>
+        <li>overlay: <a href="/partyparrot?overlay=https://assets.zeit.co/image/upload/front/favicon/favicon-32x32.png&overlayOffsetX=-10&overlayOffsetY=-20" target="_blank">/partyparrot?overlay=https://assets.zeit.co/image/upload/front/favicon/favicon-32x32.png&overlayOffsetX=-10&overlayOffsetY=-20</a></li>
+        <li>delay (in ms): <a href="/partyparrot?delay=200" target="_blank">/partyparrot?delay=200</a></li>
+        <li>full documentation: <a href="https://github.com/francoislg/PPaaS" target="_blank">https://github.com/francoislg/PPaaS</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

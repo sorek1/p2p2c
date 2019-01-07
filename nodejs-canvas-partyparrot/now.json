@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "name": "ppaas",
+    "builds": [{
+        "src": "index.html",
+        "use": "@now/static"
+    }, {
+        "src": "index.js",
+        "use": "@now/node-server",
+        "config": {
+            "maxLambdaSize": "40mb",
+            "bundle": false
+        }
+    }],
+    "routes": [{
+        "src": "/",
+        "dest": "index.html"
+    }, {
+        "src": "/(.+)",
+        "dest": "index.js",
+        "headers": {
+            "cache-control": "public, max-age=31536000, immutable"
+        }
+    }]
+}
