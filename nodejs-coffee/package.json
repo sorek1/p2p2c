@@ -1,0 +1,14 @@
+{
+  "name": "node-coffee",
+  "version": "1.0.0",
+  "main": "app.coffee",
+  "scripts": {
+    "postinstall": "coffee --compile --output ./ app.coffee"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "coffeescript": "^2.3.2"
+  }
+}
