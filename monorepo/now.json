@@ -1,4 +1,5 @@
 {
+    "name": "monorepo",
     "version": 2,
     "builds": [
         { "src": "www/package.json", "use": "@now/next" },
@@ -8,7 +9,23 @@
         { "src": "api/node/*.js", "use": "@now/node" }
     ],
     "routes": [
-        { "src": "/api/(.*)", "dest": "/api/$1" },
-        { "src": "/(.*)", "dest": "/www/$1" }
+        {
+          "src": "/api/(.*)",
+          "dest": "/api/$1"
+        },
+        {
+          "src": "/(.*)",
+          "dest": "/www/$1",
+          "headers": {
+            "x-request-path": "$1"
+          }
+        },
+        {
+          "src": "/redirect-test",
+          "status": 302,
+          "headers": {
+            "location": "https://google.com"
+          }
+        }
     ]
 }
