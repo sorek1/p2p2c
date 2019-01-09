@@ -1,9 +1,9 @@
 {
   "version": 2,
   "builds": [
-    { "src": "src/routes/first.ts", "use": "@now/node@canary" },
-    { "src": "src/routes/second.ts", "use": "@now/node@canary" },
-    { "src": "src/routes/default.ts", "use": "@now/node@canary" }
+    { "src": "src/routes/first.ts", "use": "@now/node" },
+    { "src": "src/routes/second.ts", "use": "@now/node" },
+    { "src": "src/routes/default.ts", "use": "@now/node" }
   ],
   "routes": [
     { "src": "/first", "dest": "src/routes/first.ts" },
