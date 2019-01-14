@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <title>Serverless Express.js with Now v2</title>
+    <meta name="viewport" content="initial-scale=1,width=device-width,user-scalable=0" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <img alt="<%= name %>" src="<%= dream %>" /><br /><br />
+    <h1><%= name %>, you've been dreamified!</h1>
+    <div class="user-buttons">
+      <a
+        style="margin-right: 16px"
+        class="button"
+        href="https://twitter.com/intent/tweet?text=I got dreamified. Get yours at https://serverless-express.now.sh/!%0A%0A<%= shareLink %>"
+        >Share on Twitter</a
+      >
+      <a
+        style="margin-right: 16px"
+        class="button button_outline"
+        href="https://zeit.co/blog/serverless-express-js-lambdas-with-now-2"
+        target="_blank"
+        >How it Works</a
+      >
+      <a class="button button_outline" href="/">Go Back</a>
+    </div>
+  </body>
+</html>
