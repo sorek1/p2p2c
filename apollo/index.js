@@ -15,7 +15,7 @@ const resolvers = {
   }
 };
 
-const server = new ApolloServer({ typeDefs, resolvers, introspection: true });
+const server = new ApolloServer({ typeDefs, resolvers, introspection: true, playground: true });
 
 const app = express();
 server.applyMiddleware({ app });
