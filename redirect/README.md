@@ -1,10 +1,10 @@
 # Redirect
 
-In this example we will be deploying a simple redirect from a `www` domain to a naked one.
+In this example we will be deploying a simple redirect from a `www` domain to a naked one. This will be an entirely separate deployment from your main one. You just need to deploy it one time and then you can forget about it.
 
 ### Deploy with Now
 
-To redirect, you only need to use the `routes` property of a `now.json` file.
+Create a new folder on your local machine and create a new `now.json` file. To redirect, you only need to use the `routes` property of a `now.json` file (no need to have a `builds` property in there, since it's just doing a redirect).
 
 By adding the `version` key to the `now.json` file, we can specify to use the latest Now Platform version to use `routes`.
 
@@ -36,4 +36,4 @@ Once the deployment is created, you can [alias it](https://zeit.co/docs/v2/domai
 now alias
 ```
 
-Now, when visiting either the alias or deployment URL, the visitor will get redirected to the location set via the `routes` in the `now.json` file.
+Now, when visiting either the alias (www.example.sh) or deployment URL, the visitor will get redirected to the location set via the `routes` in the `now.json` file.
