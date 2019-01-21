@@ -45,6 +45,6 @@ export const getSushi = (type: Sushi["type"]): Sushi => {
         title: "Sashimi",
       };
     default:
-      throw Error(JSON.stringify({ type: "404", title: "Not Found", description: "This sushi type does not exist." }));
+      throw new Error("This sushi type does not exist." );
   }
 };
