@@ -44,3 +44,4 @@
 | Example    | Demo     | Description     |
 |:---------- |:---------|:----------------|
 | [Next News](/nextjs-news) | [https://nextjs-news-v2.now.sh](https://nextjs-news-v2.now.sh) | A Hacker News clone created with Next.js deployed to Now 2.0 |
+| [Graph Security API](/nodejs-ms-graph-security-api) | None | A Microsoft Graph Security API example using Next.js |
