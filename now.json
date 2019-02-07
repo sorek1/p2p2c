@@ -8,7 +8,7 @@
     { "src": "php-7/*.php", "use": "@now/php" },
     { "src": "python/*.py", "use": "@now/python", "config": { "maxLambdaSize": "10mb" } },
     { "src": "vue/package.json", "use": "@now/static-build" },
-    { "src": "create-react-app/package.json", "use": "@now/static-build" },
+    { "src": "create-react-app/package.json", "use": "@now/static-build", "config": { "distDir": "build" } },
     { "src": "static/**", "use": "@now/static" },
     { "src": "nextjs/next.config.js", "use": "@now/next" },
     { "src": "nextjs-static/package.json", "use": "@now/static-build" },
