@@ -20,8 +20,15 @@
     { "src": "nodejs-koa/index.js", "use": "@now/node" },
     { "src": "nodejs-coffee/app.js", "use": "@now/node" },
     { "src": "nodejs-express/**/*.js", "use": "@now/node" },
-    { "src": "gatsby/package.json", "use": "@now/static-build", "config": {"distDir": "public"} },
+    { "src": "gatsby/package.json", "use": "@now/static-build", "config": { "distDir": "public" } },
     { "src": "docz/package.json", "use": "@now/static-build" },
-    { "src": "typescript/src/**/*.ts", "use": "@now/node@canary" }
+    { "src": "typescript/src/**/*.ts", "use": "@now/node@canary" },
+    {
+      "src": "zola/build.sh",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "./my_site/public"
+      }
+    }
   ]
 }
