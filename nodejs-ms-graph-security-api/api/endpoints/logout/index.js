@@ -1,9 +1,7 @@
-const passport = require('passport');
 const app = require('../../app');
 const { logoutRedirectUrl } = require('../../config');
 
 app.get('*', (req, res) => {
-    //req.logout();
     res.clearCookie('token');
     res.clearCookie('user');
     res.redirect(`https://login.microsoftonline.com/common/oauth2/logout?post_logout_redirect_uri=${logoutRedirectUrl}`);
