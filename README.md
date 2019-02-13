@@ -32,6 +32,7 @@
 | [Express](/nodejs-express) | [https://express-v2.now.sh](https://express-v2.now.sh) | An example using Express        |
 | [Apollo Server](/apollo) | [https://apollo-v2.now.sh](https://apollo-v2.now.sh) | An Apollo Server example using Express        |
 | [MDX Deck](/mdx-deck) | [https://mdx-deck-v2.now.sh](https://mdx-deck-v2.now.sh) | A presentation using MDX Deck        |
+| [MDX Deck - Advanced](/mdx-deck-advanced) | [https://mdx-deck-advanced-v2.now.sh](https://mdx-deck-advanced-v2.now.sh) | A presentation using MDX Deck with custom layout and React components        |
 | [HTML Minifier](/html-minifier) | [https://html-minifier-v2.now.sh](https://html-minifier-v2.now.sh) | A simple HTML minification example        |
 | [OptiPNG](/optipng) | [https://optipng-v2.now.sh](https://optipng-v2.now.sh) | A PNG optimize example using OptiPNG      |
 | [docz](/docz) | [https://docz.now.sh](https://docz.now.sh) | A documentation example built with [docz](https://docz.site)       |
