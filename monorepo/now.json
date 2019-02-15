@@ -2,7 +2,7 @@
     "name": "monorepo",
     "version": 2,
     "builds": [
-        { "src": "www/package.json", "use": "@now/next" },
+        { "src": "www/package.json", "use": "@now/next@canary" },
         { "src": "api/go/*.go", "use": "@now/go" },
         { "src": "api/python/*.py", "use": "@now/python" },
         { "src": "api/php/*.php", "use": "@now/php" },
