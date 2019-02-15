@@ -1,0 +1,6 @@
+{
+  "name": "nodejs-micro",
+  "dependencies": {
+    "micro": "^9.3.3"
+  }
+}
