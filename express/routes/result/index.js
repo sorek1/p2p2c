@@ -6,7 +6,7 @@ const baseTemplate = require("../../util/baseTemplate");
 function getTwitterMeta(imageUrl) {
   return `
 <meta name="twitter:card" content="photo" />
-<meta name="twitter:site" content="@zeihq" />
+<meta name="twitter:site" content="@zeithq" />
 <meta name="twitter:title" content="I got dreamified!" />
 <meta name="twitter:description" content="By Serverless Express on Now 2.0" />
 <meta name="twitter:image" content="${imageUrl}" />

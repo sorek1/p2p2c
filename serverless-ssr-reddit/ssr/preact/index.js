@@ -15,7 +15,7 @@ module.exports = async (req, res) => {
    */
   let mock = require("../../utils/mock");
 
-  // Caclulate boot cost.
+  // Calculate boot cost.
   console.time("Import Preact " + invoked);
   const { h } = require("preact");
   const { render: renderToString } = require("preact-render-to-string");

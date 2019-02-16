@@ -4,7 +4,7 @@ In this example we will be deploying a simple "Hello World" example with Vuepres
 
 ### Getting started with Vuepress
 
-First we need to install Vuepress as a development depenency running using `npm` or `yarn`, for this entire example we will be using `npm`:
+First we need to install Vuepress as a development dependency running using `npm` or `yarn`, for this entire example we will be using `npm`:
 
 ```
 npm install vuepress --save-dev

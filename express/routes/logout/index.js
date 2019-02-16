@@ -13,7 +13,7 @@ app.get("*", (req, res) => {
       `<div class="container">
   <img class="user-image" alt="${screen_name}" src="${profile_image_url_https}" />
   <h1>Success</h1>
-  <h2>You have been sucessfully logged out</h2>
+  <h2>You have been successfully logged out</h2>
   <a class="button" href="/">Back Home</a>
 </div>`,
     ),

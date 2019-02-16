@@ -70,7 +70,7 @@ Visit our [documentation](https://zeit.co/docs/v2/deployments/configuration) for
 
 We also need to include a script in `package.json` named `"now-build"` that specifies what command Now will run on the server to "build" your application.
 
-By default, MDX-deck will output the build to the `dist` directory. We also need to explictly copy folders containing our images and our snippets to the `dist` folder.
+By default, MDX-deck will output the build to the `dist` directory. We also need to explicitly copy folders containing our images and our snippets to the `dist` folder.
 
 ```json
 {

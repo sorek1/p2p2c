@@ -105,7 +105,7 @@ h1 {
 
 ```
 
-- Finally in order for Nuxt to be deployed staticaly we will use the `package.json` and define our build options for Nuxt creating a `nuxt.config.js` with the following code:
+- Finally in order for Nuxt to be deployed statically we will use the `package.json` and define our build options for Nuxt creating a `nuxt.config.js` with the following code:
 
 ```javascript
 const pkg = require('./package')

@@ -28,7 +28,7 @@ In summary, the `@now/node-server` config looks like this:
 ```
 
 ## Use `cache-control` to avoid duplicated requests
-With the ability to [config custom routes and headers](https://zeit.co/docs/v2/deployments/configuration/#routes), you could simplily add this route to your `now.json`:
+With the ability to [config custom routes and headers](https://zeit.co/docs/v2/deployments/configuration/#routes), you could simply add this route to your `now.json`:
 
 ```json
 {
