@@ -1,5 +1,4 @@
 const { ApolloServer, gql } = require('apollo-server');
-const { find, filter } = require('lodash');
 
 const books = [
   { id: 1, title: 'The Trials of Brother Jero', rating: 8, authorId: 1 },
@@ -15,81 +14,69 @@ const authors = [
   { id: 3, firstName: 'Chimamanda', lastName: 'Adichie' },
 ];
 
-
-const typeDefs = `
+const typeDefs = gql`
   type Author {
     id: Int!
     firstName: String!
     lastName: String!
-    books: [Book]!  # the list of books by this author
+    books: [Book]! # the list of books by this author
   }
-
   type Book {
     id: Int!
     title: String!
-    rating: Integer!
+    rating: Int!
     author: Author!
   }
-
-  type Query {
-    books: [Book!]!,
-    book(id: Int!): Book!
-    author(id: Int!): Author!
-  }
-
   # the schema allows the following query
   type Query {
-    books: [Book!]!,
+    books: [Book!]!
     book(id: Int!): Book!
     author(id: Int!): Author!
   }
-
   # this schema allows the following mutation
   type Mutation {
-    addBook(title: String!, rating: Integer!, authorId: Int!): Book!
+    addBook(title: String!, rating: Int!, authorId: Int!): Book!
   }
 `;
 
 let bookId = 5;
-let authorId = 3;
 
 const resolvers = {
   Query: {
     books: () => books,
-    book: (_, { id }) => find(books, { id: id }),
-    author: (_, { id }) => find(authors, { id: id }),
+    book: (_, { id }) => books.find(book => book.id === id),
+    author: (_, { id }) => authors.find(author => author.id === id),
   },
   Mutation: {
-    addBook: (_, {title, rating, authorId }) => {
+    addBook: (_, { title, rating, authorId }) => {
       bookId++;
 
       const newBook = {
         id: bookId,
         title,
         rating,
-        authorId
+        authorId,
       };
 
       books.push(newBook);
       return newBook;
-    }
+    },
   },
   Author: {
-    books: (author) => filter(books, { authorId: author.id }),
+    books: author => books.filter(book => book.authorId === author.id),
   },
   Book: {
-    author: (book) => find(authors, { id: book.authorId }),
+    author: book => authors.find(author => author.id === book.authorId),
   },
 };
-
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   introspection: true,
-  playground: true
+  playground: true,
 });
 
 server.listen().then(({ url }) => {
-  console.log(`🚀 Server ready at ${url}`)
+  console.log(`🚀 Server ready at ${url}`);
 });
