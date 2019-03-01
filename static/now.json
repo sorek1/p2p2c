@@ -1,8 +1,12 @@
 {
-    "version": 2,
-    "name": "static",
-    "builds": [
+	"version": 2,
+	"name": "static",
+	"builds": [
 		{ "src": "index.html", "use": "@now/html-minifier" },
-		{ "src": "styles.css", "use": "@now/html-minifier" }
-  	]
+		{ "src": "styles.css", "use": "@now/html-minifier" },
+		{ "src": "favicon.ico", "use": "@now/static" }
+	],
+	"routes": [
+		{ "src": "/favicon.ico", "headers": { "cache-control": "public, max-age=31536000" } }
+	]
 }
