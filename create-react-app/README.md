@@ -32,13 +32,13 @@ In this case we are going to use `@now/static-build` to build and deploy our Rea
         { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "build" } }
     ],
     "routes": [
-      { "src": "^/static/(.*)", "headers": { "cache-control": "s-maxage=31536000,immutable" }, "dest": "/static/$1" },
-      { "src": "^/favicon.ico", "dest": "/favicon.ico" },
-      { "src": "^/asset-manifest.json", "dest": "/asset-manifest.json" },
-      { "src": "^/manifest.json", "dest": "/manifest.json" },
-      { "src": "^/precache-manifest.(.*)", "dest": "/precache-manifest.$1" },
-      { "src": "^/service-worker.js", "headers": { "cache-control": "s-maxage=0" }, "dest": "/service-worker.js" },
-      { "src": "^/(.*)", "headers": {"cache-control": "s-maxage=0"}, "dest": "/index.html" }
+      { "src": "/static/(.*)", "headers": { "cache-control": "s-maxage=31536000,immutable" }, "dest": "/static/$1" },
+      { "src": "/favicon.ico", "dest": "/favicon.ico" },
+      { "src": "/asset-manifest.json", "dest": "/asset-manifest.json" },
+      { "src": "/manifest.json", "dest": "/manifest.json" },
+      { "src": "/precache-manifest.(.*)", "dest": "/precache-manifest.$1" },
+      { "src": "/service-worker.js", "headers": { "cache-control": "s-maxage=0" }, "dest": "/service-worker.js" },
+      { "src": "/(.*)", "headers": {"cache-control": "s-maxage=0"}, "dest": "/index.html" }
     ]
 }
 ```
