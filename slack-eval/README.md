@@ -2,7 +2,7 @@
 
 **[Live Demo](https://serverless-eval.now.sh/)**
 
-This repo is an example app featured in [this blog post](https://zeit.co/blog/slack-apps-with-now).
+This repo is an example app featured in [this blog post](https://zeit.co/blog/serverless-slack-apps-with-now).
 Please be sure to read the blog post to fully understand the concepts demonstrated here.
 
 ## Getting Started
@@ -18,4 +18,4 @@ Please be sure to read the blog post to fully understand the concepts demonstrat
 ## Feedback
 
 Please feel free to [open an issue](https://github.com/zeit/now-examples/issues)
-or [write us on Twitter](https://twitter.com/zeithq) with any feedback you may have about this project.
+or [write to us on Twitter](https://twitter.com/zeithq) with any feedback you may have about this project.

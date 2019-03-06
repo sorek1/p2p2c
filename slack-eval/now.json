@@ -7,6 +7,6 @@
   },
   "builds": [{
     "src": "*.js",
-    "use": "@now/node",
+    "use": "@now/node"
   }]
 }
