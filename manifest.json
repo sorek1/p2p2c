@@ -153,6 +153,18 @@
       "path": "/nextjs-news",
       "demo": "https://nextjs-news-v2.now.sh",
       "description": "A Hacker News clone created with Next.js deployed to Now 2.0"
+    },
+    {
+      "example": "Slack Eval",
+      "path": "/slack-eval",
+      "demo": "https://serverless-eval.now.sh",
+      "description": "A serverless Slack app deployed to Now 2.0"
+    },
+    {
+      "example": "Node Canvas",
+      "path": "/nodejs-canvas-partyparrot",
+      "demo": "https://ppaas.now.sh",
+      "description": "A Party Parrot generator built on node-canvas"
     }
   ]
 }
