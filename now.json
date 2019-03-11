@@ -1,7 +1,6 @@
 {
   "version": 2,
   "name": "now-examples",
-  "public": true,
   "builds": [
     { "src": "apollo/index.js", "use": "@now/node-server" },
     { "src": "go/*.go", "use": "@now/go" },
@@ -32,7 +31,6 @@
       "config": {
         "distDir": "./my_site/public"
       }
-    },
-    { "src": "rust/src/main.rs", "use": "@now/rust@canary" }
+    }
   ]
 }
