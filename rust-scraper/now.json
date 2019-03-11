@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "rust-scraper",
+  "public": true,
+  "builds": [
+    {
+      "src": "index.rs",
+      "use": "@now/rust"
+    }
+  ]
+}
