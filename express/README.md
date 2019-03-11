@@ -1,21 +1,46 @@
-# Serverless Express.js
+# Creating a server with Express
 
-**[Live Demo](https://serverless-express.now.sh/)**
+In this example, we will create a simple server with Express a fast, unopinionated, minimalist web framework for Node.js.
 
-This repo is an example app featured in [this blog post](https://zeit.co/blog/serverless-express-js-lambdas-with-now-2). Please be sure to read the blog post to fully understand the concepts demonstrated here.
+### Getting started with Express
 
-## Getting Started
+Let's start with adding dependency:
 
-1. Create an app on [Twitter for Developers](https://developer.twitter.com/).
-1. Add the required [secrets](https://zeit.co/docs/v2/deployments/environment-variables-and-secrets/) (found in `now.json`) to your Now account.
-   - You'll need your Twitter **consumer API keys**.
-   - `COOK_KEY` can be any arbitrary string. It is used to sign the user's cookie.
-1. Update the callback URL (`routes/login/index.js`, line 14) to be one from your Twitter app.
-1. Update the [cookie domain](https://github.com/zeit/now-examples/blob/5616954f9a3875e30c97f9c9b58e3869ddf33c50/express/middlewares/cookieSession.js#L6) with a [`now` alias](https://zeit.co/docs/v2/domains-and-aliases/aliasing-a-deployment/) of your choosing.
-1. Deploy this project with `now`.
-1. Alias your deployment to match your cookie domain: `now alias [deployment-url] [chosen-alias]`.
-1. 🎉
+```
+yarn add express
+```
 
-## Feedback
+### Deploy with Now
 
-Please feel free to [open an issue](https://github.com/zeit/now-examples/issues) or [write us on Twitter](https://twitter.com/zeithq) with any feedback you may have about this project.
+First we need to create a `now.json` configuration file to instruct Now how to build the project.
+
+For this example we will be using our newest version [Now 2.0](https://zeit.co/now).
+
+By adding the `version` key to the `now.json` file, we can specify which Now Platform version to use.
+
+We also need to define each builders we would like to use. [Builders](https://zeit.co/docs/v2/deployments/builders/overview/) are modules that take a deployment's source and return an output, consisting of [either static files or dynamic Lambdas](https://zeit.co/docs/v2/deployments/builds/#sources-and-outputs).
+
+In this case we are going to use `@now/node` in order to start a Node.js server using Express, also we will need to add a [`routes`](https://zeit.co/docs/v2/deployments/configuration#routes) key instructing Now to forward and handle all routes on Express.
+
+We will also define a name for our project (optional).
+
+```json
+{
+    "version": 2,
+    "name": "nodejs-express",
+    "builds": [
+        { "src": "index.js", "use": "@now/node" }
+    ],
+    "routes": [
+        { "src": "/(.*)", "dest": "index.js" }
+    ]
+}
+```
+
+Visit our [documentation](https://zeit.co/docs/v2/deployments/configuration) for more information on the `now.json` configuration file.
+
+We are now ready to deploy the app.
+
+```
+now
+```

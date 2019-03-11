@@ -21,7 +21,7 @@
     { "src": "nodejs-hapi/index.js", "use": "@now/node-server" },
     { "src": "nodejs-koa/index.js", "use": "@now/node" },
     { "src": "nodejs-coffee/app.js", "use": "@now/node" },
-    { "src": "nodejs-express/**/*.js", "use": "@now/node" },
+    { "src": "express/**/*.js", "use": "@now/node" },
     { "src": "nodejs-micro/index.js", "use":  "now-micro" },
     { "src": "gatsby/package.json", "use": "@now/static-build", "config": { "distDir": "public" } },
     { "src": "docz/package.json", "use": "@now/static-build" },

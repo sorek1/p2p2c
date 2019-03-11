@@ -1,17 +1,12 @@
 {
-  "name": "serverless-express",
-  "version": "1.0.1",
+  "name": "nodejs-express",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "cookie-session": "^2.0.0-beta.3",
-    "deepai": "^1.0.0",
-    "ejs": "^2.6.1",
-    "express": "^4.16.4",
-    "passport": "^0.4.0",
-    "passport-twitter": "^1.0.4"
+    "express": "^4.16.4"
   },
-  "devDependencies": {
-    "nodemon": "^1.18.9"
+  "scripts": {
+    "start": "node ."
   }
 }

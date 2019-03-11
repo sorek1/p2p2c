@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "env": {
+    "TWITTER_TOKEN": "@twitter-token",
+    "TWITTER_SECRET": "@twitter-secret",
+    "COOK_KEY": "@serverless-express-cook-key",
+    "DEEPAI_KEY": "@deepai-key"
+  },
+  "routes": [
+    { "src": "/style.css", "dest": "/style.css" },
+    {
+      "src": "/pic/(?<id>[^/]*)",
+      "headers": { "Cache-Control": "s-maxage=86400" },
+      "dest": "/routes/result?id=$id"
+    },
+    { "src": "/(.*)", "dest": "/routes/$1" }
+  ],
+  "builds": [{ "src": "routes/**/*.js", "use": "@now/node" }, { "src": "*.css", "use": "@now/static" }]
+}

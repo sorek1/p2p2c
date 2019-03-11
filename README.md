@@ -29,7 +29,7 @@
 | [Vue SSR](/vue-ssr) | https://vue-ssr-v2.now.sh | Vue example using server side rendering        |
 | [Vuepress](/vuepress) | https://vuepress-v2.now.sh | A docs example using VuePress        |
 | [Nuxt Static](/nuxt-static) | https://nuxt-static-v2.now.sh | A Nuxt Static exported example |
-| [Express](/nodejs-express) | https://express-v2.now.sh | An example using Express        |
+| [Express](/express) | https://express-v2.now.sh | An example using Express        |
 | [Apollo Server](/apollo) | https://apollo-v2.now.sh | An Apollo Server example using Express        |
 | [MDX Deck](/mdx-deck) | https://mdx-deck-v2.now.sh | A presentation using MDX Deck        |
 | [MDX Deck - Advanced](/mdx-deck-advanced) | https://advanced-mdx-deck.now.sh | A presentation using MDX Deck with custom layout and React components        |
@@ -45,3 +45,4 @@
 | Example    | Demo     | Description     |
 |:---------- |:---------|:----------------|
 | [Next News](/nextjs-news) | https://nextjs-news-v2.now.sh | A Hacker News clone created with Next.js deployed to Now 2.0 |
+| [Twitter Dreamify with Express](/express-twitter-dreamify) | https://serverless-express.now.sh | A serverless Express application that takes an authenticated Twitter user's avatar and dreamifies it. [Read the blog post on this example](https://zeit.co/blog/serverless-express-js-lambdas-with-now-2). |
